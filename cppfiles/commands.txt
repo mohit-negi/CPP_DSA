@@ -29,11 +29,11 @@ Now to make changes in git repository
 
 2.git remote -v  ---to know what changes are we authorized to made
 
-3.git origin push master
+3.git push origin master
 
          ^    ^    ^
 
- origin - it indicates that we are making changes to the origin (in this case that is repository)
  push - to push the made commits to the said repository
+ origin - it indicates that we are making changes to the origin (in this case that is repository)
  master - at what branch you're ammending changes
  

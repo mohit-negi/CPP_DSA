@@ -1,0 +1,8 @@
+git cmds
+1.touch filename.ext
+2.vi filename.txt to make changes
+3.git add filename.txt
+4.git commit -m "comments"
+5.git status
+6.git log
+:

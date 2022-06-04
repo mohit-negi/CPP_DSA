@@ -1,0 +1,39 @@
+To add a file to the repository
+
+creating and staging it for commit
+1.touch filename.extension
+2.vi - filename.extension	-- to edit it in vim(press esc :q! to quit && hold esc  :x to save made changes to file)
+3.git add (filename.extension) or (.) -- to stage it for commit
+4.now check whether it is being tracked or not by
+ git status
+5.git commit -m "comments to add"
+----------------------------------
+
+to clear the made commits 
+1.git reset <commit id> --> id from which you want to remove the commits
+
+-----------------------------------
+Now if you want to make some changes to some files without commiting to them 
+we can use a feature named as stashing --more like private version control
+
+1.git stash	-- to stash the changes made in a file 
+	(note: the made changes is stored in automatically created file)
+2.git stash pop  -- to bring the made changes in the log
+3. git stash clear -- to clear the made stash
+
+-------------------------------------
+
+Now to make changes in git repository
+
+1.git remote add origin <url to the repository>
+
+2.git remote -v  ---to know what changes are we authorized to made
+
+3.git origin push master
+
+         ^    ^    ^
+
+ origin - it indicates that we are making changes to the origin (in this case that is repository)
+ push - to push the made commits to the said repository
+ master - at what branch you're ammending changes
+ 

@@ -1,6 +1,6 @@
 To add a file to the repository
 
-creating and staging it for commit
+creating and staging file for commit
 1.touch filename.extension
 2.vi - filename.extension	-- to edit it in vim(press esc :q! to quit && hold esc  :x to save made changes to file)
 3.git add (filename.extension) or (.) -- to stage it for commit
@@ -37,3 +37,30 @@ Now to make changes in git repository
  origin - it indicates that we are making changes to the origin (in this case that is repository)
  master - at what branch you're ammending changes
  
+----------------------------------------------------
+
+Now what is branching and how it is done
+
+Branching is version control usually used in open source projects and could be used in private projects to not mess up when working on complicated project
+Go to https://learngitbranching.js.org/
+to learn branching it in an interactive way
+
+Basic commands
+1.git branch <branch name>	-- To create a new branch
+2.git checkout <branch name>	-- for selecting to make changes in what branch
+3.git merge <with:branch name>	-- To merge current branch with a branch
+
+
+Things to keep in mind while commiting and making changes to the repository
+
+Instead of making ammends to the original master(main) branch if we want to make changes to some other branch first checkout and commit to the said branch and then :-
+git push origin <master : branch name> -- instead of master branch add the branch name of the selected branch
+----------------------------------------------------------
+
+Fork -- Usually used to make a clone of the original repository and to copy it to the local or personal repository
+1st step is to click the fork option and copy the link 
+2nd step is to git clone <link of the forked repository>
+and then start working upon it
+
+-------------------------------------------------------
+further topic is upstreaming we will work on that 
